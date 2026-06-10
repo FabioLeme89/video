@@ -2,21 +2,30 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Vídeo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LavanderiaFlix</title>
+
 <style>
-body{
+*{
     margin:0;
-    background:#000;
+    padding:0;
+    box-sizing:border-box;
 }
+
+body{
+    background:#000;
+    overflow:hidden;
+}
+
 .video-container{
-    position:relative;
-    width:100%;
+    width:100vw;
     height:100vh;
 }
+
 .video-container iframe{
     width:100%;
     height:100%;
-    border:0;
+    border:none;
 }
 </style>
 </head>
@@ -24,8 +33,8 @@ body{
 
 <div class="video-container">
     <iframe
-        src="https://youtu.be/cCGu3EPcxeM"
-        title="Vídeo"
+        src="https://www.youtube.com/embed/cCGu3EPcxeM?autoplay=1&rel=0"
+        title="LavanderiaFlix"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
