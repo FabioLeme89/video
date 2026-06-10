@@ -6,39 +6,27 @@
 <title>LavanderiaFlix</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
+    margin:0;
     background:#000;
-    overflow:hidden;
 }
 
-.video-container{
+video{
     width:100vw;
     height:100vh;
-}
-
-.video-container iframe{
-    width:100%;
-    height:100%;
-    border:none;
+    object-fit:contain;
 }
 </style>
 </head>
 <body>
 
-<div class="video-container">
-    <iframe
-        src="https://www.youtube.com/embed/cCGu3EPcxeM?autoplay=1&rel=0"
-        title="LavanderiaFlix"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</div>
+<video
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="video.mp4" type="video/mp4">
+</video>
 
 </body>
 </html>
